@@ -1,2 +1,2 @@
-# Hundred-thousand-whys
-Ask myself why why why...  every day
+# 修仙...
+每日一问！
