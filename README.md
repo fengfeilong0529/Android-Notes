@@ -2,7 +2,7 @@
 ![分类](https://github.com/fengfeilong0529/Hundred-thousand-whys/blob/master/design_pattern_classification.png "分类")
 设计模式：https://www.cnblogs.com/pony1223/p/7608955.html
 
-### 各分类中模式的关键点                                                                                                                             
+### 各分类中模式的关键点：                                                                                                                           
 - 单例模式：某个类只能有一个实例，提供一个全局的访问点。
 
 - 简单工厂：一个工厂类根据传入的参量决定创建出那一种产品类的实例。
