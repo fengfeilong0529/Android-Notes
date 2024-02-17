@@ -1,0 +1,123 @@
+
+
+对象转json：
+var myObj = { name:"Bill Gates",  age:62, city:"Seattle" };
+var myJSON =  JSON.stringify(myObj);
+
+解析json：
+var myJSON = '{ "name":"Bill Gates",  "age":62, "city":"Seattle" }';
+var myObj =  JSON.parse(myJSON);
+var name = myObj.name;
+
+var obj = jQuery.parseJSON(msg);
+var message = obj.message;
+var result = obj.result;
+
+数据存储：
+localStorage，一直有效
+sessionStorage，页面未关闭有效
+
+弹窗：
+alert();
+confirm();//确认框
+prompt();//输入框
+
+div与span区别：
+div占用的位置是一行，
+span占用的是内容有多宽就占用多宽的空间距离
+
+display:block - 把链接显示为块元素可使整个链接区域可点击（不仅仅是文本），同时也允许我们规定宽度
+
+div内容居中：
+.box {
+	height:100px;
+	text-align:center;//使元素水平居中
+	display:flex;//将其定义为弹性容器
+	align-items:center;//垂直居中对齐
+	justify-content:center;//水平居中对齐
+}
+
+<div class="box">
+</div>
+
+<li>标签去掉点：
+<li style="list-style: none;"><a href="xxx">User</a></li>
+
+<a>标签href的几种用法：
+1、调用js方法：
+<a href="javascript:hi('用户名')">User</a>
+2、超链接跳转；
+3：这种方法是很多网站最常用的方法，也是最周全的方法，onclick方法负责执行js函数，而void是一个操作符，void(0)返回undefined，地址不发生跳转。而且这种方法不会像第一种方法一样直接将js方法暴露在浏览器的状态栏。
+a href="javascript:void(0);" οnclick="js_method()"
+
+
+文本显示超出部分显示省略号：
+.cont{
+	width:200px;
+	overflow: hidden;/*内容超出后隐藏*/
+	text-overflow: ellipsis;/* 超出内容显示为省略号*/
+	white-space: nowrap;/*文本不进行换行*/
+}
+
+表单提交是向服务器单向提交数据，没有返回；
+要想双向的，需要用到ajax；
+
+<li>标签内容居中：
+#left_menu li {
+	height: 60px;
+	line-height: 60px;
+}
+
+在frame框架内跳转全屏新页面：
+top.location.href = "index.html";
+普通跳转：
+window.location.href = "index.html";
+
+弹窗库：layer
+http://layer.layui.com/
+
+快速界面开发框架layui：
+https://www.layui.com/doc/
+
+js给img赋值：
+document.getElementById("snapPicture").setAttribute('src', base64字符串);
+
+js给radio赋值：
+var obj = jQuery.parseJSON(msg);
+var bannerEnable = document.getElementsByName("bannerEnable");
+bannerEnable[obj.data.bannerEnable].checked = true; //开启广告
+
+js给input输入框赋值：
+var obj = jQuery.parseJSON(msg);
+document.getElementById("name").value = obj.data.name;
+
+js设置select下拉框选中：
+var imageQuality = document.getElementById("imageQuality");
+imageQuality.options[obj.data.bannerEnable].selected = true;//全景照片压缩质量
+
+js设置背景后hover不起作用了:
+https://www.cnblogs.com/qilin-3611/p/7018706.html
+
+frameset框架颜色：
+frameborder="1"  ：设定框架的边框，0表示不要边框，1表示要边框；
+border="0"  :设定框架边框的厚度，单位是px；
+bordercolor="#ffffff"  :设定框架的边框颜色；
+framespacing=“5”  ：表示框架与框架间保留的空白的距离；
+
+设置div阴影效果：
+box-shadow：
+style="box-shadow: 0px 0px 2px 1px #aaa;"
+style="box-shadow: 0px 0px 2px 1px #aaa inset;"		外边框阴影
+style="box-shadow: 0px 0px 2px 1px #aaa outset;"	内边框阴影
+
+box-shadow属性接收一个由5个参数组成的值，每个值的意思如下：
+h-shadow: 水平阴影的位置。
+v-shadow:垂直阴影的位置。
+blur：模糊距离
+spread：阴影的尺寸
+color：阴影的颜色
+
+
+
+
+
